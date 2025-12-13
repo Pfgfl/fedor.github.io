@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Заполняем всю высоту окна */
+    margin: 0;
+    background-color: #f0f0f0; /* Цвет фона */
+}
+
+.main_menu {
+    position: relative; /* Устанавливаем позиционирование для дочерних элементов */
+    text-align: center; /* Центрируем текст в контейнере */
+    background-color: white; /* Цвет фона контейнера */
+    padding: 20px;
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}
+
+.main_menu img {
+    width: 100vw; /* Полная ширина окна */
+    height: 100vh; /* Полная высота окна */
+    object-fit: cover; /* Сохраняет пропорции изображения */
+}
+
+/* для текста посеридине */
+.text-container {
+    position: absolute; /* Позволяет позиционировать текст поверх изображения */
+    top: 20%; /* Центрируем по вертикали */
+    left: 50%; /* Центрируем по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты для точного центрирования */
+    color: white; /* Цвет текста */
+    text-align: center; /* Центрируем текст */
+    z-index: 1; /* Устанавливаем порядок наложения, чтобы текст был выше изображения */
+    margin-bottom: 20px; /* Отступ снизу для текста */
+}
+
+/* полностью баланс */
+.balance-container {
+    position: absolute; /* Абсолютное позиционирование для размещения в левом верхнем углу */
+    top: 157px;
+    left: 100px;
+    text-align: left; /* Выравнивание текста по левому краю */
+    display: flex; /* Используем flexbox для расположения кнопок */
+    flex-direction: column; /* Располагаем кнопки по вертикали */
+}
+
+.balance_button {
+    margin: 5px; /* Отступ между кнопками */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Скругление углов кнопок */
+    background-color: #b3e6b8; /* Цвет фона кнопок */
+    color: black; /* Цвет текста кнопок */
+    cursor: pointer; /* Курсор при наведении на кнопки */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    width: 120px; /* Устанавливаем фиксированную ширину кнопки */
+}
+
+.balance_button:hover {
+    background-color: #6ef57b; /* Цвет фона при наведении */
+}
+
+/* полностью кнопки в меню(играть, лобби) */
+.main_buttons {
+    position: absolute; /* Абсолютное позиционирование для размещения в левом верхнем углу */
+    top: 300px;
+    left: 850px;
+    display: flex; /* Используем flexbox для расположения кнопок */
+    flex-direction: column; /* Располагаем кнопки по вертикали */
+}
+
+/* для кнопки лобби */
+.main_button {
+    padding: 20px 40px; /* Отступы внутри кнопок */
+    margin: 20px; /* Отступ между кнопками */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Скругление углов кнопок */
+    background-color: #b3e6b8; /* Цвет фона кнопок */
+    color: black; /* Цвет текста кнопок */
+    cursor: pointer; /* Курсор при наведении на кнопки */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    width: 200px; /* Устанавливаем фиксированную ширину кнопки */
+}
+
+.main_button:hover {
+    background-color: #6ef57b; /* Цвет фона при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lobby-create_container {
+    position: relative; /* Устанавливаем позиционирование для дочерних элементов */
+    text-align: center; /* Центрируем текст в контейнере */
+    background-color: white; /* Цвет фона контейнера */
+    padding: 20px;
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}
+
+.lobby-create_container img {
+    width: 100vw; /* Полная ширина окна */
+    height: 100vh; /* Полная высота окна */
+    object-fit: cover; /* Сохраняет пропорции изображения */
+}
+
+.lobby-create_text-container {
+    position: absolute; /* Абсолютное позиционирование для размещения в левом верхнем углу */
+    top: 250px;
+    left: 550px;
+    font-size: 24px; /* Увеличиваем размер текста */
+    font-weight: bold; /* Делаем текст жирным */
+}
+
+
+
